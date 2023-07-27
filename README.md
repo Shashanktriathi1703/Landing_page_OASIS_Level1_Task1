@@ -11,12 +11,13 @@ They can be created using a variety of tools and technologies, including HTML, C
 Our gallery includes a wide variety of pictures, including landscapes, portraits, and still life. We update our gallery regularly with new pictures, so be sure to check back often!
 
 ## Demo
+![Phenomenal](https://github.com/Shashanktriathi1703/Landing_page_OASIS_Level1_Task1/assets/105815482/33375621-1fe0-4914-8cbf-5819d5084e52)
 
-![Phenomenal](https://github.com/Shashanktriathi1703/Landing_page_OASIS_Level1-Task1/assets/105815482/7454dc59-31ff-40ce-8f4b-ff60eed5fc6d)
+
 
 ## Live Demo
 
-link:[http://127.0.0.1:5500/OIBSIP/Landing_page_OASIS_Level1-Task1/Landing_page.html]
+link: [http://127.0.0.1:5500/OIBSIP/Landing_Page_OIBSIP/Landing_page.html]
 
 
 ## Contact Us
