@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Chela+One&family=Lora:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    box-sizing: border-box;
+}
+.container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.container .layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: bottom;
+    animation: container 1s ease-in-out forwards;
+}
+.container .layer:nth-child(1)
+{
+    background-image: linear-gradient(135deg, #060606 0%, #b9b9b9 100%);
+    z-index: 2;
+    animation-duration: 2s;
+}
+.container .layer:nth-child(2)
+{
+    background-image: linear-gradient(135deg, #5e9af6 0%, #050606 100%);
+    animation-delay: 1s;
+    z-index: 1;
+}
+@keyframes  container {
+    0%{
+        transform: scaleY(1);
+    }
+    100%{
+        transform: scaleY(0);
+    }
+    
+}
+img{
+    width: 555px;
+    height: 550px;
+    overflow: hidden;
+    animation-name: image;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-delay: 1.3s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+@keyframes image {
+    0%{
+        scale:75%px;
+    }
+    100%{
+        scale:1.2;
+    }
+    
+}
+.header .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+    animation-name: navbar;
+    animation-timing-function: ease-out;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 0.5s;
+    transition: transform 0.4s ease-in-out 2s;
+}
+@keyframes navbar {
+    0%{
+        transform: scale(7.2) translate(60px, -60px);
+        opacity: 0;
+    }
+    70%{
+        opacity: 0.5;
+        filter: blur(1.5px);
+    }
+    100%{
+        opacity:1;
+        filter: blur(0px);
+    }
+}
+.nav .h1{
+    font-size: 60px;
+    font-family: 'Chela One';
+    margin-left: 10px;
+    color: transparent;
+    background-image: linear-gradient(225deg, #0d0d0d 0%, #31312f 50%, #ed600f 100%);
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+}
+.nav .h1 .span{
+    font-family: 'Chela One';
+    color: transparent;
+    background-image: linear-gradient(225deg, #c45656 0%, #c41805 50%, #030303 100%);
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.nav ul li{
+        display:inline;
+        justify-items: space-between;
+        list-style: none;
+        margin: 10px 20px;
+}
+.nav ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    font-family: 'Chela One';
+    list-style: none;
+    background-image: linear-gradient(225deg, #000000 0%, #171616 50%, #7c7171 100%);
+    background-position: center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 4px 3px 2px rgba(71, 70, 70, 0.3);
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s ease-in-out;
+}
+nav ul li a:hover::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+nav ul li a:hover{
+    font-size: 32px;
+    background-image: linear-gradient(135deg, #025efc 0%, #1b1b1b 100%);    
+    background-position: center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transform: scale(1.2) translate(5px, -5px);
+    text-shadow: 4px 3px 2px rgba(71, 70, 70, 0.3);
+}
+.page{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+    text-align: justify;
+}
+.page .left{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+}
+.page .right{
+    flex-basis: 40%;
+}
+.page .left h1{
+    display:flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 5px;
+    bottom: 10px;
+    left: -15px;
+    margin-top: 10px;
+    font-size: 57px;
+    font-family: 'Chela One';
+    animation-name: heading;
+    animation-timing-function: ease-out;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 1.2s;
+    transition: transform 0.4s ease-in-out 2s;
+}
+@keyframes heading {
+    0%{
+        transform: scale(1.2) translate(60px, 60px);
+        opacity: 0;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100%{
+        opacity:1;
+
+    }
+}
+.page .left p{
+    font-size: 18px;
+    font-weight: 350;
+    left: 20px;
+    top: 10px;
+    margin-top: 10px;
+    animation-name: paragraph;
+    animation-timing-function: ease-out;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 1.2s;
+    transition: transform 0.4s ease-in-out 2s;
+}
+@keyframes paragraph {
+    0%{
+        transform: scale(2);
+        opacity: 0;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100%{
+        background-color: transparent;
+        opacity:1;
+
+    }
+}
+.page .left{
+    flex-basis: 58%;
+    text-align: justify;
+}
+.page .right{
+    flex-basis: 35%;
+}
+p .fa-solid.fa-phone{
+    margin-top: 5px;
+    left: 10px;
+}
+p i{
+    background-image: linear-gradient(225deg, #000000 0%, #383838 50%, #000000 100%);
+    text-shadow: 3px 2px 2px rgba(71, 70, 70, 0.8);
+    font-weight: bold;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-right: 15px;
+    position: relative;
+    left: 20px;
+    font-size: 25px;
+}
+#p, p i{
+    font-family: 'Chela One';
+    font-size: 25px;
+    animation-name: contact;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 1.2s;
+    animation-direction: alternate;
+    transition: transform 0.4s ease-in-out 2s;
+
+}
+@keyframes contact {
+    0%{
+        transform:  translate(3px, -3px);
+        opacity: 1;
+    }
+    100%{
+        background-color: transparent;
+        opacity:1;
+        background-image: linear-gradient(135deg, #025efc 0%, #1b1b1b 100%);    
+        background-position: center;
+        background-size: cover;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 4px 3px 2px rgba(71, 70, 70, 0.3);
+    }
+}
+.container .social-media{
+    display:flex;
+    justify-content: center;
+    animation-name: social-media;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-delay: 0.5s;
+    transition: transform 0.4s ease-in-out 2s;
+}
+.container .social-media a{
+    text-decoration: none;
+    font-size: 40px;
+    margin-right: 15px;
+    background-image: linear-gradient(225deg, #000000 0%, #171616 50%, #7c7171 100%);
+    background-position: center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 4px 3px 2px rgba(71, 70, 70, 0.3);
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+.social-media a:hover{
+    background-image: linear-gradient(135deg, #025efc 0%, #1b1b1b 100%);    
+    background-position: center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transform: scale(1.2) translate(5px, -5px);
+    text-shadow: 4px 3px 2px rgba(71, 70, 70, 0.3);
+}
+@keyframes social-media {
+    0%{
+        transform: scale(9.2) translate(-60px, -60px);
+        opacity: 0;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100%{
+        opacity:1;
+
+    }
+}
+.page .column a{
+    text-decoration: none;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    background: #000;
+    color: hsl(0, 0%, 100%);
+    width:200px;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 25px;
+    margin-left: 1px;
+    border-radius: 6px;
+    border :2px solid #000;
+    transition: all 0.3s ease;
+    animation-name: btn;
+    animation-timing-function: ease-out;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 1.2s;
+    transition: transform 0.4s ease-in-out 2s;
+}
+.column a:hover{
+    color: #000;
+    background: none;    
+}
+@keyframes btn {
+    0%{
+        transform: scale(5.2) translate(60px, -60px);
+        opacity: 0;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100%{
+        opacity:1;
+        }
+}
