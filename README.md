@@ -12,11 +12,11 @@ Our gallery includes a wide variety of pictures, including landscapes, portraits
 
 ## Demo
 
-![Phenomenal](https://github.com/Shashanktriathi1703/Landing_page_CODSOFT_Level1-Task1/assets/105815482/7454dc59-31ff-40ce-8f4b-ff60eed5fc6d)
+![Phenomenal](https://github.com/Shashanktriathi1703/Landing_page_OASIS_Level1-Task1/assets/105815482/7454dc59-31ff-40ce-8f4b-ff60eed5fc6d)
 
 ## Live Demo
 
-link:[http://127.0.0.1:5500/CODSOFTJULY/Landing_page_CODSOFT_Level1-Task1/Landing_page.html]
+link:[http://127.0.0.1:5500/OIBSIP/Landing_page_OASIS_Level1-Task1/Landing_page.html]
 
 
 ## Contact Us
