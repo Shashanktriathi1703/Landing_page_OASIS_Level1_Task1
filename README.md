@@ -1,3 +1,23 @@
 # Landing_page_OASIS_Level1_Task1
+# Landing Page
+In web development, a landing page is a standalone web page that is designed to capture the user's attention and encourage them to take a specific action.
+The content on a landing page is typically focused on a single product or service and is designed to be highly targeted and persuasive.
+They can be created using a variety of tools and technologies, including HTML, CSS, and JavaScript.
 
-This is an Internship repository given by OASIS INFOBYTE
+## Welcome to our picture gallery landing page! Here you will find a collection of different pictures that showcase our work and services
+
+
+## Gallery
+Our gallery includes a wide variety of pictures, including landscapes, portraits, and still life. We update our gallery regularly with new pictures, so be sure to check back often!
+
+## Demo
+
+![Phenomenal](https://github.com/Shashanktriathi1703/Landing_page_CODSOFT_Level1-Task1/assets/105815482/7454dc59-31ff-40ce-8f4b-ff60eed5fc6d)
+
+## Live Demo
+
+link:[http://127.0.0.1:5500/CODSOFTJULY/Landing_page_CODSOFT_Level1-Task1/Landing_page.html]
+
+
+## Contact Us
+If you have any questions or would like to work with us, please feel free to contact us at [shashanktripathi21bca183@gmail.com]. Thank you for visiting our picture gallery landing page!
